@@ -96,7 +96,7 @@ body {
 }
 
 .receipe-card {
-  margin: 7.75rem;
+  margin: 7.75rem 0;
   max-width: 46rem;
   padding: clamp(1rem, 4vw, 2.5rem); /* Responsive padding */
   border-radius: 1.5rem;
