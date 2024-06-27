@@ -1,0 +1,210 @@
+/* VARIABLES */
+
+:root {
+  /* Primary */
+  --Nutmeg: #854532;
+  --DarkRaspberry: #7b274e;
+
+  /* Neutral */
+  --White: #ffffff;
+  --RoseWhite: #fff4f9;
+  --Eggshell: #f3e5d7;
+  --LightGrey: #e3ddd7;
+  --WengeBrown: #5f564e;
+  --DarkCharcoal: #302d2b;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Young Serif';
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  font-weight: 300, 400, 600, 700;
+}
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Font STYLES */
+
+/* Heading L */
+h1 {
+  color: var(--Dark-Charcoal, #312e2c);
+  font-family: 'Young Serif';
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: 1.5rem 0 1rem;
+}
+
+/* Heading M */
+h2 {
+  color: var(--Brandy-Red, #854632);
+  font-family: 'Young Serif';
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: 1.25rem 0 1rem;
+}
+
+/* Heading S */
+h3 {
+  color: var(--Dark-Raspberry, #7a284e);
+  font-family: Outfit;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Body (Regular) */
+p,
+li,
+td {
+  color: var(--Wenge-Brown, #5f564d);
+  font-family: Outfit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+
+/* STYLES */
+body {
+  background: var(--Eggshell);
+  font-family: 'Young Serif', 'Outfit', sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.receipe-card {
+  margin: 7.75rem;
+  /* display: flex; */
+  max-width: 46rem;
+  padding: clamp(1rem, 4vw, 2.5rem); /* Responsive padding */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* gap: 2.5rem; */
+  border-radius: 1.5rem;
+  background: var(--White, #fff);
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  /* margin-bottom: -6px; */
+}
+
+.preparation-time-section {
+  padding: 1.25rem 1.75rem;
+
+  width: 100%; /* Set width to 100% to respect parent's width */
+  margin-top: 2rem;
+  border-radius: 12px;
+  background: var(--Snow, #fff7fb);
+}
+
+/* List styling */
+.preparation-time-list,
+.ingredients-list {
+  /* margin-top: 1rem; */
+  list-style: none; /* Remove default bullets */
+  padding-left: 0rem; /* Add padding for custom bullets */
+}
+
+.preparation-time-list li,
+.ingredients-list li {
+  position: relative;
+  padding-left: 3rem; /* Space for the custom bullets */
+  margin-top: 0.6rem;
+}
+
+/* Custom bullets using ::before */
+.preparation-time-list li::before,
+.ingredients-list li::before {
+  content: '•'; /* Unicode bullet character */
+  color: var(--Nutmeg); /* Use a custom color */
+  position: absolute;
+  left: 0.5rem;
+  font-size: 1.5rem; /* Adjust size as needed */
+  line-height: 90%;
+}
+
+.instructions-list {
+  list-style: none;
+  padding-left: 0rem;
+  counter-reset: item; /* Reset the counter */
+  line-height: 150%;
+}
+
+.instructions-list li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-top: 0.6rem;
+}
+
+.instructions-list li::before {
+  content: counter(item) '.';
+  color: var(--Nutmeg);
+  position: absolute;
+  left: 0.5rem;
+  counter-increment: item;
+  font-weight: 600;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background: var(--Light-Grey, #e3ddd7);
+  margin-top: 2rem;
+  /* margin: 1.5rem 0; */
+}
+/* html * {
+  outline: 0.1px solid red;
+} */
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.nutrition-table td {
+  padding: 0.75rem;
+  padding-left: 2rem;
+  border-bottom: 1px solid var(--Light-Grey, #e3ddd7);
+}
+
+.nutrition-table td:last-child {
+  color: var(--Brandy-Red, #854632);
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  /* text-align: center; */
+  margin-bottom: 2rem;
+}
+
+.attribution a {
+  color: var(--Brandy-Red, #854632);
+}
