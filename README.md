@@ -1,6 +1,6 @@
 # Frontend Mentor - Social Links Profile solution
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
 
 ## Table of contents
 
@@ -26,7 +26,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/sociallinksprofile-b1Me-PJm44
-- Live Site URL: https://felixdrawe.github.io/social-links-profile/
+- Live Site URL: https://felixdrawe.github.io/receipe-page/
 
 ### Built with
 

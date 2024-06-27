@@ -53,7 +53,7 @@ h1 {
 }
 
 /* Heading M */
-h2 {
+h3 {
   color: var(--Brandy-Red, #854632);
   font-family: 'Young Serif';
   font-size: 1.75rem;
@@ -63,7 +63,7 @@ h2 {
 }
 
 /* Heading S */
-h3 {
+h2 {
   color: var(--Dark-Raspberry, #7a284e);
   font-family: Outfit;
   font-size: 1.25rem;
@@ -96,12 +96,9 @@ body {
 
 .receipe-card {
   margin: 7.75rem;
-  /* display: flex; */
+
   max-width: 46rem;
   padding: clamp(1rem, 4vw, 2.5rem); /* Responsive padding */
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
-  /* gap: 2.5rem; */
   border-radius: 1.5rem;
   background: var(--White, #fff);
 }
@@ -110,13 +107,12 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 0.75rem;
-  /* margin-bottom: -6px; */
 }
 
 .preparation-time-section {
   padding: 1.25rem 1.75rem;
 
-  width: 100%; /* Set width to 100% to respect parent's width */
+  width: 100%;
   margin-top: 2rem;
   border-radius: 12px;
   background: var(--Snow, #fff7fb);
@@ -125,7 +121,6 @@ body {
 /* List styling */
 .preparation-time-list,
 .ingredients-list {
-  /* margin-top: 1rem; */
   list-style: none; /* Remove default bullets */
   padding-left: 0rem; /* Add padding for custom bullets */
 }
@@ -141,10 +136,10 @@ body {
 .preparation-time-list li::before,
 .ingredients-list li::before {
   content: '•'; /* Unicode bullet character */
-  color: var(--Nutmeg); /* Use a custom color */
+  color: var(--Nutmeg);
   position: absolute;
   left: 0.5rem;
-  font-size: 1.5rem; /* Adjust size as needed */
+  font-size: 1.5rem;
   line-height: 90%;
 }
 
@@ -176,11 +171,7 @@ hr {
   height: 1px;
   background: var(--Light-Grey, #e3ddd7);
   margin-top: 2rem;
-  /* margin: 1.5rem 0; */
 }
-/* html * {
-  outline: 0.1px solid red;
-} */
 
 .nutrition-table {
   width: 100%;
@@ -201,7 +192,6 @@ hr {
 
 .attribution {
   font-size: 11px;
-  /* text-align: center; */
   margin-bottom: 2rem;
 }
 
