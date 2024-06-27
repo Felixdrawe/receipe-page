@@ -40,6 +40,8 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+
 /* Font STYLES */
 
 /* Heading L */
@@ -52,24 +54,24 @@ h1 {
   margin: 1.5rem 0 1rem;
 }
 
-/* Heading M */
-h3 {
-  color: var(--Brandy-Red, #854632);
-  font-family: 'Young Serif';
-  font-size: 1.75rem;
-  font-style: normal;
-  font-weight: 400;
-  margin: 1.25rem 0 1rem;
-}
-
 /* Heading S */
-h2 {
+.preparation-time-section-title {
   color: var(--Dark-Raspberry, #7a284e);
   font-family: Outfit;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
   margin: 0;
+}
+
+/* Heading M */
+h2 {
+  color: var(--Brandy-Red, #854632);
+  font-family: 'Young Serif';
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  /* margin: 1.25rem 0 1rem; */
 }
 
 /* Body (Regular) */
